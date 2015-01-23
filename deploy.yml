@@ -1,0 +1,10 @@
+---
+
+- name: Deploy {{ application_name }} on {{ envinroment }}
+  hosts: all
+  sudo: yes
+  sudo_user: root
+  remote_user: ubuntu
+  roles:
+    - base
+    - deploy
