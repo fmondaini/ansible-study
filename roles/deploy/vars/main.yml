@@ -1,0 +1,9 @@
+---
+
+# Application settings.
+project_path: "{{ project_root }}/app"
+virtualenv_path: "{{ project_root }}/venv"
+requirements_file: "{{ project_path }}/requirements.txt"
+application_path: "{{ project_path }}/{{ application_name }}"
+application_log_dir: "/var/log/{{ project_name }}"
+application_log_file: "{{ application_log_dir }}/gunicorn_supervisor.log"

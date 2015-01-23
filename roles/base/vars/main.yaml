@@ -1,0 +1,6 @@
+---
+
+# Application vars
+project_name: #myproject
+project_root: #/var/projects/myproject
+project_repo: #git@bitbucket.org:myuser/myproject.git
