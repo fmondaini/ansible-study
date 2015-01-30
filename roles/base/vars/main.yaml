@@ -1,6 +1,10 @@
 ---
 
 # Application vars
-project_name: #myproject
-project_root: #/var/projects/myproject
-project_repo: #git@bitbucket.org:myuser/myproject.git
+project_name: catalog
+project_root: /var/projects/catalog
+project_repo: git@github.com:fmondaini/catalog.git
+static_root: "/var/{{ project_name }}/static"
+media_root: "/var/{{ project_name }}/media"
+virtualenv_path: "/var/projects/{{project_name}}/venv"
+application_log_dir: "/var/log/{{ project_name }}"
