@@ -1,4 +1,4 @@
-# django-stack
+# Ansible Study
 
 ## Estudo sobre ansible para provisionar e efetuar deploy num stack django.
 
