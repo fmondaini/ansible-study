@@ -7,4 +7,4 @@ ansible_ssh_user=ubuntu
 # ansible_ssh_private_key_file=~/.ssh/key.pem
 
 [dbservers]
-dbmondaini.chpyayl3hyxv.us-east-1.rds.amazonaws.com ansible_connection=ssh    ansible_ssh_user=ubuntu
+dbmondaini.chpyayl3hyxv.us-east-1.rds.amazonaws.com
