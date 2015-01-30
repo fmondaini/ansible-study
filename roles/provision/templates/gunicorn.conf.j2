@@ -1,0 +1,5 @@
+bind = "127.0.0.1:8888"
+user = "{{ remote_user }}"
+workers = 4
+pythonpath = "{{ virtualenv_path }}/bin/python"
+pidfile = "/run/gunicorn_{{ project_name }}.pid"
