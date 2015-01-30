@@ -1,7 +1,10 @@
 ---
 
+- name: Update apt cache 
+  apt: update_cache=yes cache_valid_time=3600
+
 - name: Ensure bash, OpenSSl, and libssl are the latest versions
-  apt: name={{ item }} update_cache={{ update_apt_cache }} state=latest
+  apt: name={{ item }} state=latest
   with_items:
     - bash
     - openssl
@@ -9,7 +12,7 @@
     - libssl-doc
 
 - name: Install base packages
-  apt: name={{ item }} update_cache={{ update_apt_cache }} force=yes state=installed
+  apt: name={{ item }} force=yes state=installed
   with_items:
     - build-essential
     - ntp
@@ -20,5 +23,6 @@
     - python-pycurl
     - supervisor
     - nginx
+
 - name: Install virtualenv
   pip: name=virtualenv
